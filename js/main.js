@@ -4,7 +4,7 @@ import TabNav from './modules/tabnav.js';
 import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import DropdownMenu from './modules/dropdown-menu.js';
-// import MenuMobile from './modules/menu-mobile.js';
+import MenuMobile from './modules/menu-mobile.js';
 // import Funcionamento from './modules/funcionamento.js';
 // import FetchAnimais from './modules/fetch-animais.js';
 // import FetchBitcoin from './modules/fetch-bitcoin.js';
@@ -29,3 +29,6 @@ modal.init();
 
 const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
+
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
