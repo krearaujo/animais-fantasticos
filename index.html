@@ -15,10 +15,18 @@
             <button data-menu="button" aria-expanded="false" aria-controls="menu"> Menu</button>
             <ul data-menu="list" id="menu">
                 <li> <a href="#animais">Animais</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li data-dropdown>
+                    <a href="sobre.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="empresa.html">A Empresa</a></li>
+                      <li><a href="equipe.html">Equipe</a></li>
+                      <li><a href="socios.html">Sócios</a></li>
+                      <li><a href="investidores.html">Investidores</a></li>
+                    </ul>
+                  </li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a data-modal="abrir" href="login.html">Login <span class="arrow-black"></span></a></li>
             </ul>
         </nav>
         <section class="grid-section animais" data-anime="scroll" id="animais">
@@ -59,6 +67,7 @@
                     <p> As espécies variam em porte, sendo a menor dentre elas o lobo-dourado, vivente no continente africano, e a maior o lobo-cinzento, vivendo maiormente no Hemisfério Norte que é também o maior canino selvagem da atualidade.</p>
                     <p>Os lobos são invariavelmente espécies que ostentam certas habilidades sociais, tendo um espécime/casal de espécimes reprodutor(es) como líder(es).</p>
                     <p>São geralmente predadores de alto nível. </p>
+                </section>
                 <section data-anime="show-right">
                     <h2> Macaco</h2>
                     <p> Macaco é um termo de origem africana (provavelmente do banto makako)[1] utilizado como designação comum a todas as espécies de símios ou primatas antropoides. </p>
@@ -110,7 +119,7 @@
             <h1 class="titulo"> Números</h1>
             <div class="numeros-grid"> </div>
         </section>
-        <section class="grid-section contato" data-anime="contato" id="contato">
+        <section class="grid-section contato" data-anime="scroll" id="contato">
             <h1 class="titulo"> Contato</h1>
             <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
                 <img src="img/mapa.png" alt="mapa">
@@ -120,7 +129,7 @@
                 <li>+55 (83) 99999-9999</li>
                 <li>Rua do Conde, nº21</li>
                 <li>Doe <span class="btc-preco">0</span> bitcoins para nos ajudar</li>
-                <li data-semana="1, 2, 3, 4, 5" data-horario="8, 18">Seg a Sex, das 8 às 18</li>
+                <li data-semana="1, 2, 3, 4, 5" data-horario="8, 18">Seg a Sex, das 8h às 18h</li>
             </ul>
         </section>
         <footer class="copy">
